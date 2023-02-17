@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--Kobler til javascript koden-->
+    <script src="oblig1.js"></script>
+
+  <p style="font-size: 30px"><strong>Bestilling av kinobiletter </strong></p>
+    <!--Lager select option slik at brukeren kan velge film-->
+  <tr><td>Velg film:</td></tr>
+  <tr><td><select style="width: 200px" id="betaling" >
+    <option>Velg film her</option>
+    <option value="Matrix">Matrix</option>
+    <option value="Batman">Batman</option>
+    <option value="James Bond ">Batman</option>
+  </select>
+  </td></tr>
+  <br><br>
+  <table>
+
+<!--lager input boksene-->
+    Antall <input type="number" id="antall" style="width: 40px"/><span id ="antall-error" style="color: red"><br><br>
+
+
+
+      <tr><td>Fornavn </td><td><input type="text" id="fornavn"/><span id ="fornavn-error" style="color: red"></span></tr> </td>
+    <tr><td>Etternavn </td><td><input type="text" id="etternavn"/><span id ="etternavn-error" style="color: red"></span></tr> </td>
+    <tr><td>Telefonnr </td><td><input type="text" id="telefonnr"/><span id ="telefonnr-error" style="color: red"></span></tr> </td>
+    <tr><td>Epost </td><td><input type="text" id="epost"/><span id ="epost-error"style="color: red"></span></tr> </td>
+<!--Lager kjopbillet knappen-->
+    <tr><td><button onclick="KjopBilett();">Kjøp bilett</button></td></tr>
+
+ </span> </table>
+    <!--Skriver overksift over slett knappe-->
+  <tr><td><p style="font-size: 25px"><strong>Alle Billeter </strong></p></td></tr>
+  <div id="film"></div>
+    <!--Lager slett kanppen-->
+  <tr><td><button onclick="slettBilett();">Slett alle bilettene</button></td></tr>
+</head>
+<body>
+
+</body>
+</html>
